@@ -32,7 +32,7 @@ const MetalPricesBanner = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Outer container styling (fixed at top, full width, centered content)
+  // Updated banner style with reduced padding, gap, and font size
   const bannerStyle = {
     position: "fixed",
     top: 0,
@@ -41,29 +41,29 @@ const MetalPricesBanner = () => {
     zIndex: 9999,
     display: "flex",
     alignItems: "center",
-    justifyContent: "center", // <--- This centers the items horizontally
-    gap: "2rem",
-    padding: "0.5rem 1rem",
+    justifyContent: "center",
+    gap: "1rem",           // reduced gap between items
+    padding: "0.25rem 0.5rem", // reduced padding
     backgroundColor: "#f4efe8",
     color: "#333",
     fontFamily: "Arial, sans-serif",
-    fontSize: "14px",
+    fontSize: "12px",       // smaller text
     boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)"
   };
 
-  // Each metal “item” styling
+  // Each metal “item” styling with reduced gap
   const metalItemStyle = {
     display: "flex",
     alignItems: "center",
-    gap: "0.4rem"
+    gap: "0.2rem"
   };
 
-  // Circle icon styling
+  // Reduced circle icon styling
   const iconStyle = {
-    width: "24px",
-    height: "24px",
-    borderRadius: "50%", // make it circular
-    objectFit: "cover"   // ensure the icon fills the circle nicely
+    width: "12px",
+    height: "12px",
+    borderRadius: "50%",
+    objectFit: "cover"
   };
 
   // Optional styling for the metal name
