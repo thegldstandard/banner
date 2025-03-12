@@ -1,46 +1,23 @@
-/* 1) (Optional) Import Google Fonts if you like */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan:wght@400;700&display=swap");
+/* Global resets and site-wide styles */
 
-/* 2) The .banner container */
-.banner {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-  /* Make sure each banner row is fluidly 100% of the parent container */
-  width: 100%;
-
-  /* Example styling */
-  background-color: #faf4e8;
-  padding: 0.5rem;
-  box-sizing: border-box; /* ensures padding doesn't add extra width */
-  border-bottom: 1px solid #ddd; /* faint line between rows */
+  /* You can pick your own default font */
+  font-family: Arial, sans-serif;
 }
 
-/* 3) The icon */
-.icon {
-  width: 24px;  /* bigger than 12 so it’s easier to see on mobile */
-  height: 24px;
-  border-radius: 50%;
-  object-fit: cover;
+/* Example styling for headings, paragraphs, etc. */
+h1, h2, h3 {
+  margin: 0;
+  padding: 1rem 0;
 }
 
-/* 4) The metal name and price */
-.metalName {
-  font-family: 'DM Serif Display', serif;  /* optional font */
-  text-transform: uppercase;
-  font-weight: 400;
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
 }
 
-.price {
-  font-family: 'League Spartan', sans-serif; /* optional font */
-  font-weight: 700;
-}
-
-/* 5) Mobile responsiveness: if screen <= 600px wide, stack elements */
-@media (max-width: 600px) {
-  .banner {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+/* If you want more advanced global styling, add it here */
