@@ -1,0 +1,81 @@
+/* (1) OPTIONAL: Import Google fonts if you want them for name/price styling */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan:wght@400;700&display=swap");
+
+/* (2) The fixed banner at the top */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; /* We'll override to wrap in the media query below */
+
+  background-color: #f4efe8;
+  color: #333;
+  font-family: Arial, sans-serif; /* fallback */
+  font-size: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  gap: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* (3) Each metal item row by default */
+.metalItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* (4) The icon styling */
+.metalIcon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* (5) Metal name, e.g., DM Serif */
+.metalName {
+  font-family: 'DM Serif Display', serif; /* optional font */
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* (6) Price, e.g., League Spartan */
+.price {
+  font-family: 'League Spartan', sans-serif; /* optional font */
+  font-weight: 700;
+}
+
+/* (7) Positive/negative changes */
+.changeNegative {
+  color: red;
+}
+.changePositive {
+  color: green;
+}
+
+/* (8) Loading/error styling */
+.loadingMsg,
+.errorMsg {
+  font-family: 'League Spartan', sans-serif; /* optional font */
+}
+
+/* (9) Media query <= 600px: let items wrap and stack so none get clipped */
+@media (max-width: 600px) {
+  .banner {
+    flex-wrap: wrap;  /* allow items to move to the next row if no space */
+    justify-content: center;
+  }
+
+  .metalItem {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
