@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-
-  <!-- Ensures mobile devices render at device width (critical for responsiveness) -->
+  <meta charset="utf-8" />
+  <!-- Ensures mobile devices render at the device’s width (critical for responsiveness) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Gold Standard Banner</title>
+  <title>Metal Price Banner</title>
 
-  <!-- Link to the stylesheet (style.css) in the same repo -->
-  <link rel="stylesheet" href="./style.css" />
+  <!-- Link to a global stylesheet (style.css) in the public folder -->
+  <!-- '%PUBLIC_URL%' is replaced automatically by Create React App build -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/style.css" />
 </head>
 <body>
+  <!-- If JavaScript is disabled, display this message -->
+  <noscript>You need to enable JavaScript to run this app.</noscript>
 
-  <!-- The main banner container -->
-  <div class="banner">
-    <img src="gold-icon.png" alt="Gold Icon" class="icon" />
-    <span class="metalName">Gold</span>
-    <span class="price">$1900.00</span>
-  </div>
-
-  <!-- Repeat or add more metals as needed -->
-  <div class="banner">
-    <img src="silver-icon.png" alt="Silver Icon" class="icon" />
-    <span class="metalName">Silver</span>
-    <span class="price">$22.30</span>
-  </div>
-
-  <div class="banner">
-    <img src="platinum-icon.png" alt="Platinum Icon" class="icon" />
-    <span class="metalName">Platinum</span>
-    <span class="price">$980.00</span>
-  </div>
-
-  <div class="banner">
-    <img src="palladium-icon.png" alt="Palladium Icon" class="icon" />
-    <span class="metalName">Palladium</span>
-    <span class="price">$1650.00</span>
-  </div>
-
+  <!-- This is where React will mount your app -->
+  <div id="root"></div>
 </body>
 </html>
