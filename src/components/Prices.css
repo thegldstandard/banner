@@ -1,18 +1,18 @@
-/* (1) OPTIONAL: Import Google fonts if you want them for name/price styling */
+/* 1) Optional: import Google fonts if desired */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan:wght@400;700&display=swap");
 
-/* (2) The fixed banner at the top */
+/* 2) The fixed banner at the top */
 .banner {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%; 
   z-index: 9999;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap; /* We'll override to wrap in the media query below */
+  flex-wrap: nowrap; /* We'll wrap in media query below */
 
   background-color: #f4efe8;
   color: #333;
@@ -24,14 +24,14 @@
   padding: 0.25rem 0.5rem;
 }
 
-/* (3) Each metal item row by default */
+/* 3) Each metal item row by default */
 .metalItem {
   display: flex;
   align-items: center;
   gap: 0.3rem;
 }
 
-/* (4) The icon styling */
+/* 4) The icon styling */
 .metalIcon {
   width: 12px;
   height: 12px;
@@ -39,20 +39,20 @@
   object-fit: cover;
 }
 
-/* (5) Metal name, e.g., DM Serif */
+/* 5) Metal name (DM Serif Display, if loaded) */
 .metalName {
-  font-family: 'DM Serif Display', serif; /* optional font */
+  font-family: 'DM Serif Display', serif; 
   text-transform: uppercase;
   font-weight: 400;
 }
 
-/* (6) Price, e.g., League Spartan */
+/* 6) Price (League Spartan, if loaded) */
 .price {
-  font-family: 'League Spartan', sans-serif; /* optional font */
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
 }
 
-/* (7) Positive/negative changes */
+/* 7) Positive/negative changes */
 .changeNegative {
   color: red;
 }
@@ -60,16 +60,15 @@
   color: green;
 }
 
-/* (8) Loading/error styling */
-.loadingMsg,
-.errorMsg {
-  font-family: 'League Spartan', sans-serif; /* optional font */
+/* 8) Loading/error messages */
+.loadingMsg, .errorMsg {
+  font-family: 'League Spartan', sans-serif;
 }
 
-/* (9) Media query <= 600px: let items wrap and stack so none get clipped */
+/* 9) Media query <= 600px: wrap and stack items so none get clipped */
 @media (max-width: 600px) {
   .banner {
-    flex-wrap: wrap;  /* allow items to move to the next row if no space */
+    flex-wrap: wrap;  
     justify-content: center;
   }
 

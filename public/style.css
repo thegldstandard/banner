@@ -1,0 +1,46 @@
+/* 1) (Optional) Import Google Fonts if you like */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan:wght@400;700&display=swap");
+
+/* 2) The .banner container */
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  /* Make sure each banner row is fluidly 100% of the parent container */
+  width: 100%;
+
+  /* Example styling */
+  background-color: #faf4e8;
+  padding: 0.5rem;
+  box-sizing: border-box; /* ensures padding doesn't add extra width */
+  border-bottom: 1px solid #ddd; /* faint line between rows */
+}
+
+/* 3) The icon */
+.icon {
+  width: 24px;  /* bigger than 12 so it’s easier to see on mobile */
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 4) The metal name and price */
+.metalName {
+  font-family: 'DM Serif Display', serif;  /* optional font */
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.price {
+  font-family: 'League Spartan', sans-serif; /* optional font */
+  font-weight: 700;
+}
+
+/* 5) Mobile responsiveness: if screen <= 600px wide, stack elements */
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
