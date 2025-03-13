@@ -1,23 +1,15 @@
-/* Global resets and site-wide styles */
+/* A simple global reset and base styling */
 
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* You can pick your own default font */
   font-family: Arial, sans-serif;
 }
 
-/* Example styling for headings, paragraphs, etc. */
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 1rem 0;
 }
 
-p {
-  margin: 0 0 1rem 0;
-  line-height: 1.5;
-}
-
-/* If you want more advanced global styling, add it here */
+/* Add any global site-wide styles you wish here */

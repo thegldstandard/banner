@@ -1,4 +1,4 @@
-/* 1) Optional: import Google fonts if desired */
+/* 1) (Optional) Import Google fonts if you want them for the banner text */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan:wght@400;700&display=swap");
 
 /* 2) The fixed banner at the top */
@@ -6,13 +6,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   z-index: 9999;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap; /* We'll wrap in media query below */
+  flex-wrap: nowrap; /* We let it wrap in the media query below */
 
   background-color: #f4efe8;
   color: #333;
@@ -24,14 +24,14 @@
   padding: 0.25rem 0.5rem;
 }
 
-/* 3) Each metal item row by default */
+/* (3) Each metal item row by default */
 .metalItem {
   display: flex;
   align-items: center;
   gap: 0.3rem;
 }
 
-/* 4) The icon styling */
+/* (4) The icon styling */
 .metalIcon {
   width: 12px;
   height: 12px;
@@ -39,20 +39,20 @@
   object-fit: cover;
 }
 
-/* 5) Metal name (DM Serif Display, if loaded) */
+/* (5) Metal name (DM Serif Display if loaded) */
 .metalName {
-  font-family: 'DM Serif Display', serif; 
+  font-family: 'DM Serif Display', serif;
   text-transform: uppercase;
   font-weight: 400;
 }
 
-/* 6) Price (League Spartan, if loaded) */
+/* (6) Price (League Spartan if loaded) */
 .price {
   font-family: 'League Spartan', sans-serif;
   font-weight: 700;
 }
 
-/* 7) Positive/negative changes */
+/* (7) Positive/negative changes */
 .changeNegative {
   color: red;
 }
@@ -60,18 +60,18 @@
   color: green;
 }
 
-/* 8) Loading/error messages */
-.loadingMsg, .errorMsg {
+/* (8) Loading/error messages */
+.loadingMsg,
+.errorMsg {
   font-family: 'League Spartan', sans-serif;
 }
 
-/* 9) Media query <= 600px: wrap and stack items so none get clipped */
+/* (9) Mobile responsiveness: if screen <= 600px, wrap & stack items */
 @media (max-width: 600px) {
   .banner {
     flex-wrap: wrap;  
     justify-content: center;
   }
-
   .metalItem {
     flex-direction: column;
     text-align: center;
