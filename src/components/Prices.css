@@ -1,3 +1,4 @@
+/* Prices.css */
 /* 1) (Optional) Import Google fonts if you want them for the banner text */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan:wght@400;700&display=swap");
 
@@ -12,11 +13,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap; /* We let it wrap in the media query below */
+  flex-wrap: nowrap;
 
   background-color: #f4efe8;
   color: #333;
-  font-family: Arial, sans-serif; /* fallback */
+  font-family: Arial, sans-serif;
   font-size: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
@@ -66,15 +67,21 @@
   font-family: 'League Spartan', sans-serif;
 }
 
-/* (9) Mobile responsiveness: if screen <= 600px, wrap & stack items */
+/* (9) Mobile responsiveness: if screen <= 600px */
 @media (max-width: 600px) {
   .banner {
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 0.5rem; /* Increased padding on mobile */
+    font-size: 10px; /* Slightly smaller text on mobile */
   }
   .metalItem {
     flex-direction: column;
     text-align: center;
     margin-bottom: 0.5rem;
+  }
+  .metalIcon {
+    width: 20px;
+    height: 20px;
   }
 }

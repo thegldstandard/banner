@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Content spacing to account for fixed banner */
+.content {
+  margin-top: 60px; /* Default for desktop */
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin-top: 100px; /* Increased top margin on mobile when banner wraps */
+  }
+}
