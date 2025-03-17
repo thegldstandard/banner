@@ -1,5 +1,5 @@
 import React from "react";
-import Prices from "./components/prices"; // Make sure this matches your file name exactly
+import Prices from "./components/prices"; // Match the exact filename
 
 function App() {
   return (

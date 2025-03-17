@@ -1,3 +1,7 @@
+/* 1) (Optional) Import Google fonts if you want them for the banner text */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=League+Spartan:wght@400;700&display=swap");
+
+/* 2) The fixed banner at the top */
 .banner {
   position: fixed;
   top: 0;
@@ -10,7 +14,8 @@
   justify-content: center;
   flex-wrap: nowrap;
 
-  background-color: green; /* Updated to green */
+  /* ORIGINAL color (cream/beige) */
+  background-color: #f4efe8;
   color: #333;
   font-family: Arial, sans-serif;
   font-size: 12px;
@@ -18,4 +23,59 @@
 
   gap: 1rem;
   padding: 0.25rem 0.5rem;
+}
+
+/* (3) Each metal item row by default */
+.metalItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* (4) The icon styling */
+.metalIcon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* (5) Metal name (DM Serif Display if loaded) */
+.metalName {
+  font-family: 'DM Serif Display', serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* (6) Price (League Spartan if loaded) */
+.price {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+}
+
+/* (7) Positive/negative changes */
+.changeNegative {
+  color: red;
+}
+.changePositive {
+  color: green;
+}
+
+/* (8) Loading/error messages */
+.loadingMsg,
+.errorMsg {
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* (9) Mobile responsiveness: if screen <= 600px */
+@media (max-width: 600px) {
+  .banner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .metalItem {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
 }
