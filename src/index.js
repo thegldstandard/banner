@@ -11,4 +11,6 @@ root.render(
   </React.StrictMode>
 );
 
+// If you want to measure performance, pass a function
+// to log results, for example: reportWebVitals(console.log)
 reportWebVitals();

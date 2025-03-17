@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Prices.css";
 
-// Import your icons from src/components/icons
+// Replace these icon imports with your actual icon paths:
 import goldIcon from "./icons/gold-icon.png";
 import silverIcon from "./icons/silver-icon.png";
 import platinumIcon from "./icons/platinum-icon.png";
