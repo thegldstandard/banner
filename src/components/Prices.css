@@ -20,7 +20,8 @@
   font-size: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-  gap: 1rem;
+  /* Increased gap for more horizontal space between items */
+  gap: 2rem; /* <- Change this number if you want more or less spacing */
   padding: 0.25rem 0.5rem;
 }
 
